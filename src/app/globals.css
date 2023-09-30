@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  background: #F0EFEB;
+  color: #1B1B1B;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background: #283618;
+    color: #F0EFEB;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  height:100vh;
+  display:flex;
+}
